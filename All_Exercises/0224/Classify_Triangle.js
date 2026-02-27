@@ -3,15 +3,15 @@
   isosceles (exactly two sides are equal), or scalene (no sides are equal). Use an if-else statement
    to classify the triangle. */
 
-let side1 = 10, side2= 10, side3 = 10;
+let side1 = 30, side2= 50, side3 = 10;
 
-if((side1 == side2) && (side2 == side3) && (side1 == side3))
+if((side1 == side2) && (side2 == side3))
 {
     console.log("The triangle is equilateral");
 }else if((side1 === side2) || (side2 === side3) || (side1 === side3))
 {
     console.log("The triangle is isosceles");
-}else if((side1 !== side2) && (side2 !== side3) && (side1 !== side3))
+}else 
 {
     console.log("The triangle is scalene");
 }
