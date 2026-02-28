@@ -7,3 +7,5 @@ do {
 
     number++;
 } while (number < 10);
+
+console.log(typeof null);
