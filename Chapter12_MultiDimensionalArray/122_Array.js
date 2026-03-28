@@ -1,0 +1,31 @@
+// 2D Arrays — Common Operations
+
+let scores = [
+    [85, 90, 78],   // student 0 , 253
+    [60, 45, 70],   // student 1,  175
+    [95, 88, 92]    // student 2, 275
+];
+let rowsum = scores.map(row=>row.reduce((a,b) => a+b,0))
+console.log(rowsum)
+//let rowsum = scores.map(row=>row.reduce(a,b) = a+b, 0)
+
+let suiteResults = [
+    ["login-pass", "register-pass", "logout-pass"],  // Auth suite
+    ["search-pass", "filter-fail", "sort-pass"],  // Search suite
+    ["checkout-fail", "payment-fail", "confirm-pass"]   // Payment suite
+];
+let arrayLength = suiteResults.length;
+console.log(arrayLength)
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(suiteResults[i][j].includes("fail"));
+    }
+}
+
+let execTimes = [
+    [120, 340, 89, 450],  // dev
+    [200, 410, 100, 520],  // staging
+    [180, 390, 95, 490]   // prod
+];
+
+// 3x4
