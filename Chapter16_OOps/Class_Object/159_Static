@@ -1,0 +1,23 @@
+class Testrunner{
+    static passcount = 0;
+    static totalcount = 0;
+
+    constructor (name,passed){
+        this.name = name;
+       
+        Testrunner.totalcount++;
+        if(passed){
+            Testrunner.passcount++;
+        }       
+    }
+
+    static testsummary(){
+            console.log( Testrunner.passcount,"/", Testrunner.totalcount);
+           }
+}
+
+ new Testrunner("Login",true);
+ new Testrunner("Mainpage",true);
+ new Testrunner("dashboard",false);
+ Testrunner.testsummary();
+
